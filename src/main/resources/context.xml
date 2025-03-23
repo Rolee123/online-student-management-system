@@ -1,0 +1,12 @@
+<Context>
+    <Resource name="jdbc/StudentManagementDB" 
+          auth="Container" 
+          type="javax.sql.DataSource"
+          driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://localhost:1433;databaseName=StudentManagementDB"
+          username="admin"
+          password="admin"
+          maxTotal="20"
+          maxIdle="10"
+          maxWaitMillis="10000"/>
+</Context>
