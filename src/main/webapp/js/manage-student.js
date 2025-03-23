@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch the instructors dynamically when the page loads
-    fetchInstructors();
+    fetchStudents();
 
     // Handle success/error messages
     setTimeout(function () {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
 });
 
-function fetchInstructors() {
+function fetchStudents() {
     fetch('/onlinemanagement/ManageStudents')
         .then(response => response.json())
         .then(data => {
@@ -96,7 +96,7 @@ function showDeleteConfirmation(id) {
     new bootstrap.Modal(document.getElementById('deleteConfirmationModal')).show();
 }
 
-function deleteInstructor() {
+function deleteStudent() {
     if (studentIdToDelete !== null) {
         // Perform the deletion (e.g., via AJAX or form submission)
         // Redirect to delete instructor servlet with instructorIdToDelete

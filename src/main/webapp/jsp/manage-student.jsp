@@ -75,7 +75,7 @@
     <div class="modal fade" id="editInstructorModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="<%= request.getContextPath() %>/EditInstructorServlet" method="post">
+                <form action="<%= request.getContextPath() %>/EditStudentServlet" method="post">
                     <div class="modal-header">
                         <h5 class="modal-title" id="editModalLabel">Edit Student</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -103,7 +103,7 @@
     <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-            	<form action="<%= request.getContextPath() %>/DeleteInstructorServlet" method="post">
+            	<form action="<%= request.getContextPath() %>/DeleteStudentServlet" method="post">
 	                <div class="modal-header">
 	                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
 	                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -113,7 +113,7 @@
 	                </div>
 	                <div class="modal-footer">
 	                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-	                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn" onclick="deleteInstructor()">Delete</button>
+	                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn" onclick="deleteStudent()">Delete</button>
 	                </div>
                 </form>
             </div>
